@@ -1,0 +1,38 @@
+
+public class DiceGame {
+
+	/**
+	 * Simulates a game of dice. Two players roll a single die
+	 * Player with highest score wins. If scores are identical, game is a draw.
+	 * 
+	 */
+	public static void main(String[] args) {
+		/**
+		 * @param player1 and player2 (instances of Player class)
+		 * @param player2Score and player2Score (result of rolling dice)
+		 * 
+		 */
+		Player player1 = new Player();
+		Player player2 = new Player();
+		
+		player1.setDice();
+		player2.setDice();
+		
+		int player1Score = player1.getScore();
+		int player2Score = player2.getScore();
+		
+		System.out.println("Player 1 rolled: " + player1Score);
+		System.out.println("Player 2 rolled: " + player2Score);
+		
+		if (player1Score == player2Score) {
+			System.out.println("Draw");
+		} else if (player1Score > player2Score) {
+			System.out.println("Player 1 wins");
+		} else {
+				System.out.println("Player 2 wins");
+		}
+			
+	}
+		
+}
+

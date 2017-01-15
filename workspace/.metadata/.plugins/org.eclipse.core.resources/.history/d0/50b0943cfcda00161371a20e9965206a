@@ -1,0 +1,23 @@
+
+public class DiceGame {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Player player1 = new Player();
+		Player player2 = new Player();
+		
+		player1.roll();
+		player2.roll();
+		
+		player1Score = player1.get_dice();
+		player2Score = player2.get_dice();
+		
+		System.out.println("Player 1 rolled a " + player1Score);
+		
+		if player1Score == player2Score {
+			System.out.println("Draw")
+		}
+	}
+}

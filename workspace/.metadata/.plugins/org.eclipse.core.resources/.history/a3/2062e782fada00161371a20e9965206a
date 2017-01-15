@@ -1,0 +1,13 @@
+
+public class Player {
+	int this.dice;
+	
+	public int roll() {
+		this.dice = 3;
+	}
+	
+	public int get_dice() {
+		return this.dice;
+	}
+
+}

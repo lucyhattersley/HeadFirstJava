@@ -1,0 +1,42 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+/**
+ * <h1>Player<h2>
+ * Implementation of a player with three six-sided dice
+ * Player can roll the dice (setter) and return the total value of their dice
+ * 
+ * @author Lucy
+ * @version 1.0
+ * 
+ * @param dice (an int)
+ */
+public class Player {
+	private List<Integer> dice = new ArrayList<Integer>(); 
+	//private int dice;
+	
+	public void setDice() {
+		/**
+		 * Sets dice to a random number (1-6)
+		 */
+		Random rand = new Random();
+		int numberOfDice = 3;
+		int i = 0;
+		while (i < numberOfDice) {
+			dice[i] = rand.nextInt(6) + 1;
+			i += 1
+		}
+		
+		
+				
+	}
+	
+	public int getDice() {
+		/**
+		 * @return dice
+		 */
+		return dice;
+	}
+
+}

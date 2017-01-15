@@ -1,0 +1,12 @@
+import java.util.List;
+import java.util.ArrayList;
+
+public class HelloWorld {
+	public static void main(String[] args) {
+		List<String> dogs = new ArrayList<String>();
+		dogs.add("Fido");
+		System.out.println(dogs);
+		
+	}
+
+}

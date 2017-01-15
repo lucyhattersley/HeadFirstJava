@@ -1,0 +1,16 @@
+import java.util.Random;
+
+
+public class Player {
+	static int dice;
+	
+	public void roll() {
+		Random rand = new Random();
+		this.dice = rand.nextInt(6) +1;
+	}
+	
+	public int get_dice() {
+		return this.dice;
+	}
+
+}
