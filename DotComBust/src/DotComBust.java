@@ -33,7 +33,7 @@ public class DotComBust {
 
 
 	private void startPlaying() {
-		while(!dotComsList.isEmpty()) { // as long as the DotCom list is not empty
+		while (!dotComsList.isEmpty()) { // as long as the DotCom list is not empty
 			String userGuess = helper.getUserInput("Enter a guess"); // get user input
 			checkUserGuess(userGuess); // call our own checkUserGuess method
 		} // close while
@@ -50,6 +50,9 @@ public class DotComBust {
 			if (result.equals("hit")) {
 				break; // get out of the loop early, no point in testing the others
 			}
+			if (result.equals("kill")) {
+				dotComsList.remove(dotComToTest);
+				break;
 		} // close for
 		System.out.println(result);
 	} // close method
